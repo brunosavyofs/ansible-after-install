@@ -1,0 +1,114 @@
+---
+packages:
+
+  copy:
+    repo_entry: "ppa:paolorotolo/copy"
+    when:
+      - work
+      - personal
+
+  paper-icon-theme:
+    repo_entry: "ppa:snwh/pulp"
+    when:
+      - work
+      - personal
+
+  paper-gtk-theme:
+    repo_entry: "ppa:snwh/pulp"
+    when:
+      - work
+      - personal
+
+  unity-tweak-tool:
+    when:
+      - work
+      - personal
+
+  atom:
+    repo_entry: "ppa:webupd8team/atom"
+    when:
+      - work
+      - personal
+
+  google-chrome-stable:
+    key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+    repo_entry: "deb http://dl.google.com/linux/chrome/deb/ stable main"
+    when:
+      - work
+      - personal
+
+  variety:
+    repo_entry: "ppa:peterlevi/ppa"
+    when:
+      - work
+      - personal
+
+  vlc:
+    when:
+      - personal
+
+  gimp:
+    when:
+      - personal
+
+  git:
+    when:
+      - work
+      - personal
+
+  ubuntu-restricted-extras:
+    when:
+      - personal
+
+  guake:
+    when:
+      - personal
+      - work
+
+  guake-indicator:
+    when:
+      - personal
+      - work
+    desktop_entry:
+      Type: 'Application'
+      Exec: 'guake-indicator'
+      Icon: 'guake-indicator'
+      X-GNOME-Autostart-enabled: true
+      Name: 'Guake Indicator'
+      Categories: 'Utilities'
+      Terminal: false
+
+  calibre:
+    when:
+      - personal
+      - work
+
+  gparted:
+    when:
+      - personal
+      - work
+
+  spideroak:
+    key_url: https://spideroak.com/dist/spideroak-apt-2013.asc
+    repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
+    when:
+      - work
+      - personal
+
+  clementine:
+    repo_entry: "ppa:otto-kesselgulasch/clementine"
+    when:
+      - work
+      - personal
+
+      #instalar pg admin
+      #instalar valentinadb
+      #instalar dropbox
+      #instalar copy
+      #instalar truecrypt
+
+  # oracle-java8-installer:
+  #  repo_entry: "ppa:webupd8team/java"
+  #  when:
+  #    - work
+  #    - personal

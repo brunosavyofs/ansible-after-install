@@ -1,0 +1,3 @@
+---
+  path_startup_desktop_entries: "~/.config/autostart"
+  path_desktop_entries: "~/.local/share/applications"

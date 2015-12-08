@@ -1,0 +1,7 @@
+---
+packages:
+  valentina_studio_db:
+    url: https://www.valentina-db.com/en/all-downloads/vstudio/current/vstudio_x64_6_lin-deb?format=raw
+    when:
+      - work
+      - personal

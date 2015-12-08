@@ -1,0 +1,20 @@
+[Desktop Entry]
+{% for k, i in item.value.desktop_entry.iteritems() if k != 'X-GNOME-Autostart-enabled' or set-startup-apps %}
+{{ '%s=%s' % (k, i)  }}
+{% endfor %}
+
+
+{#
+Type={{ type }}
+Exec={{ exec }}
+Icon={{ icon }}
+Version={{ version }}
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled={{ autostart }}
+Name={{ desc }} #Guake Indicator
+Comment={{ comment }}
+Categories={{  }} Development;IDE;
+Terminal={{ terminal }}
+StartupWMClass={{ startup-vmclass }}
+#}
