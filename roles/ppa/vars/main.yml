@@ -1,12 +1,6 @@
 ---
 packages:
 
-  copy:
-    repo_entry: "ppa:paolorotolo/copy"
-    when:
-      - work
-      - personal
-
   paper-icon-theme:
     repo_entry: "ppa:snwh/pulp"
     when:
