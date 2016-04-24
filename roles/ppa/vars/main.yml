@@ -24,12 +24,12 @@ packages:
       - work
       - personal
 
-  google-chrome-stable:
-    key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
-    repo_entry: "deb http://dl.google.com/linux/chrome/deb/ stable main"
-    when:
-      - work
-      - personal
+  # google-chrome-stable:
+  #   key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+  #   repo_entry: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+  #   when:
+  #     - work
+  #     - personal
 
   variety:
     repo_entry: "ppa:peterlevi/ppa"
@@ -82,18 +82,30 @@ packages:
       - personal
       - work
 
-  spideroak:
-    key_url: https://spideroak.com/dist/spideroak-apt-2013.asc
-    repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
+  # spideroakone:
+  #   key_url: https://spideroak.com/dist/spideroak-apt-2013.asc
+  #   repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
+  #   when:
+  #     - work
+  #     - personal
+
+  clementine:
+    repo_entry: "ppa:me-davidsansome/clementine"
     when:
       - work
       - personal
 
-  clementine:
-    repo_entry: "ppa:otto-kesselgulasch/clementine"
+  veracrypt:
+    repo_entry: "ppa:unit193/encryption"
+    key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x03647209B58A653A
     when:
-      - work
       - personal
+
+  nodejs:
+    when:
+      - personal
+      - work
+
 
       #instalar pg admin
       #instalar valentinadb
