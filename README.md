@@ -1,6 +1,6 @@
 # ansible-after-install
 
-## Dependencies
+## Requirements
 
 - ansible
 ```
