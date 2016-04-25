@@ -1,0 +1,7 @@
+---
+packages:
+
+  docker-compose:
+    when:
+      - work
+      - personal

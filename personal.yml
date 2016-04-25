@@ -4,3 +4,4 @@
     become_method: sudo
     roles:
       - { role: ppa, env_tag: personal }
+      - { role: pip, env_tag: personal }
