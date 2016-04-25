@@ -1,9 +1,0 @@
----
-    - name: create desktop entries
-      template:
-        src=desktop.j2
-        dest="{{ path_desktop_entries }}/{{ item.key }}.desktop"
-        mode=0744
-        owner="{{ ansible_ssh_user }}"
-      when: env_tag in item.value.when and 'desktop_entry' in item.value and ('X-GNOME-Autostart-enabled' in item.value or not set-startup-apps)
-      with_dict: packages
