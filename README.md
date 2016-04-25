@@ -13,8 +13,10 @@ $ sudo apt-get install python-pip
 
 ## Profiles
 
-### Common
-#### Sofwares which are installed in both work and personal profiles:
+This script has two different profiles. Each one contains a set of softwares that will be installed.
+
+### Work
+#### Sofwares which are installed in ```work``` profile:
 - atom
 - calibre
 - clementine
@@ -30,32 +32,20 @@ $ sudo apt-get install python-pip
 - unity-tweak-tool
 - variety
 
+#### To run script in ```work``` profile:
+```bash
+$ ansible-playbook work.yml
+```
+
 ### Personal
-#### Softwares which are installed only in personal profile.
+#### All those installed in ```work``` profile, plus:
 
 - gimp
 - ubuntu-restricted-extras
 - veracrypt
 - vlc
 
-#### To run script in personal profile:
+#### To run script in ```personal``` profile:
 ```bash
 $ ansible-playbook personal.yml
 ```
-
-### Work
-There is no software that will be installed only in work profile
-
-#### To run script in work profile:
-```bash
-$ ansible-playbook work.yml
-```
-
-### All
-
-#### To install all softwares:
-```bash
-$ ansible-playbook all.yml
-```
-
-## Which sofwares are installed in both work and personal profiles
