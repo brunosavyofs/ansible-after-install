@@ -106,12 +106,14 @@ packages:
       - personal
       - work
 
+  npm:
+    when:
+      - personal
+      - work
 
       #instalar pg admin
       #instalar valentinadb
       #instalar dropbox
-      #instalar copy
-      #instalar truecrypt
 
   # oracle-java8-installer:
   #  repo_entry: "ppa:webupd8team/java"

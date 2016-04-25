@@ -1,12 +1,6 @@
 ---
-- hosts: localhost
-  become: yes
-  become_method: sudo
-  roles:
-    - { role: ppa, tags: [ 'work' ] }
-    # - ppa
-    # - common
-    # - installable
-#   antes instalar:
-#   python-setuptools
-#   python-pip
+  - hosts: localhost
+    become: yes
+    become_method: sudo
+    roles:
+      - { role: ppa, env_tag: work }
