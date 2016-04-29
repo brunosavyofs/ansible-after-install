@@ -1,0 +1,8 @@
+---
+
+  - name: install pip packages
+    pip:
+      name="{{ item.key }}"
+      state=latest
+    when: env_tag in item.value.when
+    with_dict: "{{packages}}"
