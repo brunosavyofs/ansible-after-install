@@ -5,3 +5,4 @@
     roles:
       - { role: ppa, env_tag: work }
       - { role: pip, env_tag: work }
+      - { role: npm, env_tag: work }

@@ -5,3 +5,4 @@
     roles:
       - { role: ppa, env_tag: personal }
       - { role: pip, env_tag: personal }
+      - { role: npm, env_tag: personal }

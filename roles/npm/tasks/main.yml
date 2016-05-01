@@ -1,0 +1,8 @@
+---
+  - name: install npm packages
+    npm:
+      name="{{ item.key }}"
+      state=latest
+      global=yes
+    when: env_tag in item.value.when
+    with_dict: "{{packages}}"
