@@ -1,0 +1,15 @@
+---
+  installed_packages: []
+
+  packages:
+    vivaldi:
+      url: https://downloads.vivaldi.com/stable/vivaldi-stable_1.1.453.47-1_amd64.deb
+      when:
+        - work
+        - personal
+
+    valentina_studio_db:
+      url: https://www.valentina-db.com/en/all-downloads/vstudio/current/vstudio_x64_lin-deb?format=raw
+      when:
+        - work
+        - personal

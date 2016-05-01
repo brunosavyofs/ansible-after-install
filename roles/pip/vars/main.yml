@@ -1,17 +1,17 @@
 ---
-packages:
+  packages:
 
-  docker-compose:
-    when:
-      - work
-      - personal
+    docker-compose:
+      when:
+        - work
+        - personal
 
-  pep8:
-    when:
-      - work
-      - personal
+    pep8:
+      when:
+        - work
+        - personal
 
-  ansible-lint:
-    when:
-      - work
-      - personal
+    ansible-lint:
+      when:
+        - work
+        - personal

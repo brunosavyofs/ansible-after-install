@@ -111,7 +111,7 @@ packages:
       - personal
       - work
 
-  libffi-dev
+  libffi-dev:
     when:
       - personal
       - work

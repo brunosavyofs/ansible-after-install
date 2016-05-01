@@ -1,0 +1,27 @@
+---
+  - name: verify if package is installed
+    stat:
+      path="/usr/bin/{{ item.key }}"
+    register: "st"
+    with_dict: "{{ packages }}"
+
+  - name: populate installed packages dict
+    set_fact:
+      installed_packages: "{{ installed_packages + [item.item.key] if item.stat.exists else installed_packages }}"
+    with_items: "{{st.results}}"
+
+  - name: download installer
+    get_url:
+      url="{{ item.value.url }}"
+      dest="/tmp/{{ item.key }}.deb"
+      mode=0744
+      validate_certs=False
+    when: item.key not in installed_packages and env_tag in item.value.when and 'url' in item.value
+    with_dict: "{{ packages }}"
+
+  - name: install .deb packages
+    apt:
+      deb="/tmp/{{ item.key }}.deb"
+      install_recommends=yes
+    with_dict: "{{ packages }}"
+    when: item.key not in installed_packages and env_tag in item.value.when
