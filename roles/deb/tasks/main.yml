@@ -1,8 +1,10 @@
 ---
+
   - name: verify if package is installed
     stat:
-      path="/usr/bin/{{ item.key }}"
+      path="{{ item.value.executable_file }}"
     register: "st"
+    when: env_tag in item.value.when and 'executable_file' in item.value
     with_dict: "{{ packages }}"
 
   - name: populate installed packages dict

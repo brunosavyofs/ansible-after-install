@@ -4,12 +4,21 @@
   packages:
     vivaldi:
       url: https://downloads.vivaldi.com/stable/vivaldi-stable_1.1.453.47-1_amd64.deb
+      executable_file: /usr/bin/vivaldi
       when:
         - work
         - personal
 
     valentina_studio_db:
       url: https://www.valentina-db.com/en/all-downloads/vstudio/current/vstudio_x64_lin-deb?format=raw
+      executable_file: /opt/VStudio/vstudio
+      when:
+        - work
+        - personal
+
+    pcloud:
+      url: https://c214.pcloud.com/dHZ8IsmSZJvU4uZZZnUtgq7ZHkZZihRZkZ5LUXZMGPrWVpNUakVi0lnnwQX2R4sl2K7/pCloud_Linux_amd64_3.1.1.deb
+      executable_file: /usr/bin/psyncgui
       when:
         - work
         - personal
