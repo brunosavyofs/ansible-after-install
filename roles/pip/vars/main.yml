@@ -5,3 +5,8 @@ packages:
     when:
       - work
       - personal
+
+  pep8:
+    when:
+      - work
+      - personal
