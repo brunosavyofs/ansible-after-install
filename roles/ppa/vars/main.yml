@@ -24,12 +24,12 @@ packages:
       - work
       - personal
 
-  # google-chrome-stable:
-  #   key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
-  #   repo_entry: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
-  #   when:
-  #     - work
-  #     - personal
+  google-chrome-stable:
+    key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+    repo_entry: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+    when:
+      - work
+      - personal
 
   variety:
     repo_entry: "ppa:peterlevi/ppa"
