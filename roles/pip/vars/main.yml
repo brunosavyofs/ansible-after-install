@@ -10,3 +10,8 @@ packages:
     when:
       - work
       - personal
+
+  ansible-lint:
+    when:
+      - work
+      - personal
