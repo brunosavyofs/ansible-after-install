@@ -111,6 +111,11 @@ packages:
       - personal
       - work
 
+  libffi-dev
+    when:
+      - personal
+      - work
+
       #instalar pg admin
       #instalar valentinadb
       #instalar dropbox
