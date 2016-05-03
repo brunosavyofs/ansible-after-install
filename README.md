@@ -17,7 +17,9 @@ This script has two different profiles. Each one contains a set of softwares tha
 
 ### Work
 #### Sofwares which are installed in ```work``` profile:
+- ansible-lint
 - atom
+- bower
 - calibre
 - clementine
 - docker-compose
@@ -29,8 +31,11 @@ This script has two different profiles. Each one contains a set of softwares tha
 - npm
 - paper-icon-theme
 - paper-gtk-theme
+- pcloud
 - unity-tweak-tool
+- valentina-dd
 - variety
+- vivaldi
 
 #### To run script in ```work``` profile:
 ```bash
@@ -38,7 +43,7 @@ $ ansible-playbook work.yml
 ```
 
 ### Personal
-#### All those installed in ```work``` profile, plus:
+#### All those installed in ```work``` profile is also installed in ```personal```, plus:
 
 - gimp
 - ubuntu-restricted-extras
