@@ -14,5 +14,4 @@ install:
 script:
   - ansible-playbook work.yml --syntax-check
   - ansible-playbook personal.yml --syntax-check
-  - ansible-playbook work.yml --sudo
-  - ansible-playbook personal.yml --sudo
+  - ansible-playbook personal.yml
