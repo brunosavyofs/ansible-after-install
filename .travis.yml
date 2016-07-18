@@ -9,6 +9,7 @@ before_install:
 install:
   # Install Ansible.
   - pip install ansible==2.1.0
+  - printf '[defaults]\ninventory=hosts' > ansible.cfg
 
 script:
   - ansible-playbook work.yml --syntax-check
