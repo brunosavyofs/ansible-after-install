@@ -59,18 +59,18 @@ packages:
       - personal
       - work
 
-  guake-indicator:
-    when:
-      - personal
-      - work
-    desktop_entry:
-      Type: 'Application'
-      Exec: 'guake-indicator'
-      Icon: 'guake-indicator'
-      X-GNOME-Autostart-enabled: true
-      Name: 'Guake Indicator'
-      Categories: 'Utilities'
-      Terminal: false
+  # guake-indicator:
+  #   when:
+  #     - personal
+  #     - work
+  #   desktop_entry:
+  #     Type: 'Application'
+  #     Exec: 'guake-indicator'
+  #     Icon: 'guake-indicator'
+  #     X-GNOME-Autostart-enabled: true
+  #     Name: 'Guake Indicator'
+  #     Categories: 'Utilities'
+  #     Terminal: false
 
   calibre:
     when:
@@ -95,11 +95,11 @@ packages:
       - work
       - personal
 
-  # veracrypt:
-  #   repo_entry: "ppa:unit193/encryption"
-  #   key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x03647209B58A653A
-  #   when:
-  #     - personal
+  veracrypt:
+    repo_entry: "ppa:unit193/encryption"
+    key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x03647209B58A653A
+    when:
+      - personal
 
   nodejs:
     when:
