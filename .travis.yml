@@ -1,4 +1,4 @@
-dist: willy
+dist: xenial
 language: python
 python: "2.7"
 
