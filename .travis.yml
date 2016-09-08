@@ -4,6 +4,7 @@ python: "2.7"
 
 before_install:
   # Make sure everything's up to date.
+  - sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse partner"
   - sudo apt-get update -qq
 
 install:
