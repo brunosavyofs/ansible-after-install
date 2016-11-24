@@ -1,0 +1,18 @@
+dist: xenial
+language: python
+python: "2.7"
+
+before_install:
+  # Make sure everything's up to date.
+  - sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
+  - sudo apt-get update -qq
+
+install:
+  # Install Ansible.
+  - pip install ansible==2.1.0
+  - printf '[defaults]\ninventory=hosts' > ansible.cfg
+
+script:
+  - ansible-playbook work.yml --syntax-check
+  - ansible-playbook personal.yml --syntax-check
+  - ansible-playbook personal.yml

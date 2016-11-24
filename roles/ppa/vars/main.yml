@@ -1,64 +1,64 @@
 ---
 packages:
 
-  # paper-icon-theme:
-  #   repo_entry: "ppa:snwh/pulp"
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # paper-gtk-theme:
-  #   repo_entry: "ppa:snwh/pulp"
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # unity-tweak-tool:
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # atom:
-  #   repo_entry: "ppa:webupd8team/atom"
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # google-chrome-stable:
-  #   key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
-  #   repo_entry: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # variety:
-  #   repo_entry: "ppa:peterlevi/ppa"
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # vlc:
-  #   when:
-  #     - personal
-  #
-  # gimp:
-  #   when:
-  #     - personal
-  #
-  # git:
-  #   when:
-  #     - work
-  #     - personal
-  #
-  # ubuntu-restricted-extras:
-  #   when:
-  #     - personal
-  #
-  # guake:
-  #   when:
-  #     - personal
-  #     - work
-  #
+  paper-icon-theme:
+    repo_entry: "ppa:snwh/pulp"
+    when:
+      - work
+      - personal
+
+  paper-gtk-theme:
+    repo_entry: "ppa:snwh/pulp"
+    when:
+      - work
+      - personal
+
+  unity-tweak-tool:
+    when:
+      - work
+      - personal
+
+  atom:
+    repo_entry: "ppa:webupd8team/atom"
+    when:
+      - work
+      - personal
+
+  google-chrome-stable:
+    key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+    repo_entry: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+    when:
+      - work
+      - personal
+
+  variety:
+    repo_entry: "ppa:peterlevi/ppa"
+    when:
+      - work
+      - personal
+
+  vlc:
+    when:
+      - personal
+
+  gimp:
+    when:
+      - personal
+
+  git:
+    when:
+      - work
+      - personal
+
+  ubuntu-restricted-extras:
+    when:
+      - personal
+
+  guake:
+    when:
+      - personal
+      - work
+
   # guake-indicator:
   #   when:
   #     - personal
@@ -71,50 +71,56 @@ packages:
   #     Name: 'Guake Indicator'
   #     Categories: 'Utilities'
   #     Terminal: false
-  #
-  # calibre:
-  #   when:
-  #     - personal
-  #     - work
-  #
-  # gparted:
-  #   when:
-  #     - personal
-  #     - work
-  #
-  # # spideroakone:
-  # #   key_url: https://spideroak.com/dist/spideroak-apt-2013.asc
-  # #   repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
-  # #   when:
-  # #     - work
-  # #     - personal
-  #
-  # clementine:
-  #   repo_entry: "ppa:me-davidsansome/clementine"
+
+  calibre:
+    when:
+      - personal
+      - work
+
+  gparted:
+    when:
+      - personal
+      - work
+
+  # spideroakone:
+  #   key_url: https://spideroak.com/dist/spideroak-apt-2013.asc
+  #   repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
   #   when:
   #     - work
   #     - personal
-  #
-  # veracrypt:
-  #   repo_entry: "ppa:unit193/encryption"
-  #   key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x03647209B58A653A
-  #   when:
-  #     - personal
-  #
-  # nodejs:
-  #   when:
-  #     - personal
-  #     - work
-  #
-  # npm:
-  #   when:
-  #     - personal
-  #     - work
-  #
-  # libffi-dev:
-  #   when:
-  #     - personal
-  #     - work
+
+  clementine:
+    repo_entry: "ppa:me-davidsansome/clementine"
+    when:
+      - work
+      - personal
+
+  veracrypt:
+    repo_entry: "ppa:unit193/encryption"
+    key_url: http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x03647209B58A653A
+    when:
+      - personal
+
+  nodejs:
+    when:
+      - personal
+      - work
+
+  npm:
+    when:
+      - personal
+      - work
+
+  fish:
+    repo_entry: "ppa:fish-shell/release-2"
+    when:
+      - personal
+      - work
+
+  libffi-dev:
+    when:
+      - personal
+      - work
 
 # Arduino IDE and Arduino Libraries
   arduino:
@@ -135,9 +141,9 @@ packages:
     when:
       - personal
 
-      #instalar pg admin
-      #instalar valentinadb
-      #instalar dropbox
+  #instalar pg admin
+  #instalar valentinadb
+  #instalar dropbox
 
   # oracle-java8-installer:
   #  repo_entry: "ppa:webupd8team/java"

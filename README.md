@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brunosavyofs/ansible-after-install.svg?branch=master)](https://travis-ci.org/brunosavyofs/ansible-after-install)
+
 # ansible-after-install
 
 ## Requirements
