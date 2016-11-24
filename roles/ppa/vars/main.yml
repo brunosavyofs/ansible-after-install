@@ -122,25 +122,6 @@ packages:
       - personal
       - work
 
-# Arduino IDE and Arduino Libraries
-  arduino:
-    repo_entry: "ppa:arduino-ubuntu-team/ppa"
-    when:
-      - personal
-
-  mosquitto:
-    repo_entry: "ppa:mosquitto-dev/mosquitto-ppa"
-    when:
-      - work
-
-  gcc-avr:
-    when:
-      - personal
-
-  avr-lib:
-    when:
-      - personal
-
   #instalar pg admin
   #instalar valentinadb
   #instalar dropbox
