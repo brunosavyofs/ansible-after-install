@@ -49,6 +49,8 @@ $ ansible-playbook work.yml
 - ubuntu-restricted-extras
 - veracrypt
 - vlc
+- arduino
+- mosquitto
 
 #### To run script in ```personal``` profile:
 ```bash
