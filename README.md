@@ -4,13 +4,14 @@
 
 ## Requirements
 
-- ansible
+- Apt-get
+```
+$ sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip
+```
+
+- Pip
 ```
 $ sudo -H pip install ansible
-```
-- python-pip
-```
-$ sudo apt-get install python-pip
 ```
 
 ## Profiles
