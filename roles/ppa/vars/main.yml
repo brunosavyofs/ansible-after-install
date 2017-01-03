@@ -59,10 +59,10 @@ packages:
       - personal
       - work
 
-  # guake-indicator:
-  #   when:
-  #     - personal
-  #     - work
+  guake-indicator:
+    when:
+      - personal
+      - work
   #   desktop_entry:
   #     Type: 'Application'
   #     Exec: 'guake-indicator'
@@ -82,12 +82,12 @@ packages:
       - personal
       - work
 
-  # spideroakone:
-  #   key_url: https://spideroak.com/dist/spideroak-apt-2013.asc
-  #   repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
-  #   when:
-  #     - work
-  #     - personal
+  spideroakone:
+    key_url: https://spideroak.com/dist/spideroak-apt-2016.asc
+    repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
+    when:
+      - work
+      - personal
 
   clementine:
     repo_entry: "ppa:me-davidsansome/clementine"
