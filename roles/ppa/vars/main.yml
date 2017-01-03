@@ -59,10 +59,10 @@ packages:
       - personal
       - work
 
-  guake-indicator:
-    when:
-      - personal
-      - work
+  # guake-indicator:
+  #   when:
+  #     - personal
+  #     - work
   #   desktop_entry:
   #     Type: 'Application'
   #     Exec: 'guake-indicator'
