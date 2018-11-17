@@ -1,8 +1,8 @@
 ---
   - name: add repositories keys
     apt_key:
-      url="{{ item.value.key_url }}"
-      state=present
+      url: "{{ item.value.key_url }}"
+      state: present
     tags:
       - extra
     when: env_tag in item.value.when and 'key_url' in item.value
@@ -10,21 +10,23 @@
 
   - name: add repositories
     apt_repository:
-      repo="{{ item.value.repo_entry }}"
-      state=present
-      update_cache=no
+      repo: "{{ item.value.repo_entry }}"
+      state: present
+      update_cache: no
+      filename: "{{ item.value.filename if 'filename' in item.value else item.key }}"
     tags:
       - extra
     when: env_tag in item.value.when and 'repo_entry' in item.value
     with_dict: "{{packages}}"
 
   - name: update cache
-    apt: update_cache=yes
+    apt:
+      update_cache: yes
 
   - name: install packages
     apt:
-      name="{{ item.key }}"
-      state=latest
+      name: "{{ item.key }}"
+      state: latest
     tags:
       - extra
     when: env_tag in item.value.when

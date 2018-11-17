@@ -2,7 +2,7 @@
 
   - name: verify if package is installed
     stat:
-      path="{{ item.value.executable_file }}"
+      path: "{{ item.value.executable_file }}"
     register: "st"
     when: env_tag in item.value.when and 'executable_file' in item.value
     with_dict: "{{ packages }}"
@@ -14,16 +14,16 @@
 
   - name: download installer
     get_url:
-      url="{{ item.value.url }}"
-      dest="/tmp/{{ item.key }}.deb"
-      mode=0744
-      validate_certs=False
+      url: "{{ item.value.url }}"
+      dest: "/tmp/{{ item.key }}.deb"
+      mode: 0744
+      validate_certs: False
     when: item.key not in installed_packages and env_tag in item.value.when and 'url' in item.value
     with_dict: "{{ packages }}"
 
   - name: install .deb packages
     apt:
-      deb="/tmp/{{ item.key }}.deb"
-      install_recommends=yes
+      deb: "/tmp/{{ item.key }}.deb"
+      install_recommends: yes
     with_dict: "{{ packages }}"
     when: item.key not in installed_packages and env_tag in item.value.when

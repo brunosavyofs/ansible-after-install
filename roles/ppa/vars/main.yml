@@ -7,32 +7,23 @@ packages:
       - work
       - personal
 
-  paper-gtk-theme:
-    repo_entry: "ppa:snwh/pulp"
-    when:
-      - work
-      - personal
-
   unity-tweak-tool:
     when:
       - work
       - personal
 
-  atom:
-    repo_entry: "ppa:webupd8team/atom"
-    when:
-      - work
-      - personal
-
   google-chrome-stable:
+    filename: google-chrome
     key_url: https://dl-ssl.google.com/linux/linux_signing_key.pub
     repo_entry: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
     when:
       - work
       - personal
 
-  variety:
-    repo_entry: "ppa:peterlevi/ppa"
+  code:
+    filename: vscode
+    key_url: https://tagplus5.github.io/vscode-ppa/ubuntu/gpg.key
+    repo_entry: "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
     when:
       - work
       - personal
@@ -59,20 +50,7 @@ packages:
       - personal
       - work
 
-  # guake-indicator:
-  #   when:
-  #     - personal
-  #     - work
-  #   desktop_entry:
-  #     Type: 'Application'
-  #     Exec: 'guake-indicator'
-  #     Icon: 'guake-indicator'
-  #     X-GNOME-Autostart-enabled: true
-  #     Name: 'Guake Indicator'
-  #     Categories: 'Utilities'
-  #     Terminal: false
-
-  calibre:
+  guake-indicator:
     when:
       - personal
       - work
@@ -83,14 +61,9 @@ packages:
       - work
 
   spideroakone:
+    filename: "spideroakone"
     key_url: https://spideroak.com/dist/spideroak-apt-2016.asc
     repo_entry: "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted"
-    when:
-      - work
-      - personal
-
-  clementine:
-    repo_entry: "ppa:me-davidsansome/clementine"
     when:
       - work
       - personal
@@ -101,15 +74,15 @@ packages:
     when:
       - personal
 
-  nodejs:
-    when:
-      - personal
-      - work
+  # nodejs:
+  #   when:
+  #     - personal
+  #     - work
 
-  npm:
-    when:
-      - personal
-      - work
+  # npm:
+  #   when:
+  #     - personal
+  #     - work
 
   fish:
     repo_entry: "ppa:fish-shell/release-2"
