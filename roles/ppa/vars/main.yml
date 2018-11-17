@@ -74,15 +74,15 @@ packages:
     when:
       - personal
 
-  # nodejs:
-  #   when:
-  #     - personal
-  #     - work
+  nodejs:
+    when:
+      - personal
+      - work
 
-  # npm:
-  #   when:
-  #     - personal
-  #     - work
+  npm:
+    when:
+      - personal
+      - work
 
   fish:
     repo_entry: "ppa:fish-shell/release-2"
